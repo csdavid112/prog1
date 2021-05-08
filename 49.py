@@ -8,7 +8,6 @@ allergia = list(map(str, input("Mely allergénekre allergiás?(Több válasz ese
 # print(allergia)
 fin = open("input.txt", "r")
 data = fin.read()
-
 gluten = data.count("gluten")
 peanuts = data.count("peanuts")
 treenuts = data.count("tree nuts")
@@ -72,7 +71,7 @@ ax.bar_label(rects)
 
 fig.tight_layout()
 plt.show()
-
+fig.savefig("output.png")
 
 
 
